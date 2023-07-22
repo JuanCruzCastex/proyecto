@@ -1,0 +1,249 @@
+/*=== Aplicando CSS Global===*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    padding-bottom: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*=== Aplicando CSS al encabezado===*/
+#logo{
+    width: 20%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#menu{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+/*small devices (cellphones, 320px and up)*/
+@media (min-width: 320px) {
+    #encabezado{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+    #opcionesIzquierdo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 5px;
+        margin: 5px;
+    }
+    #quienesSomos{
+        padding-top: 10px;
+        margin: 5px;
+    }
+    #porQueElegirnos{
+        padding-top: 10px;
+        margin: 5px;
+    }
+    #propuestaEducativa{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        padding: 70px;
+        padding-top: 30px;
+    }
+    #propuestaEducativa h3{
+        display: grid;
+        padding-top: 5px;
+        justify-content: center;
+    }
+    #propuestaEducativa img{
+        display: grid;  
+        border-radius: 100%;
+        justify-items: center;
+        padding: 30px;
+        padding-bottom: 5px;
+    }
+    #redesSociales{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        justify-items: center;
+        font-size: xx-large;
+    }
+    ion-icon{
+        color: black;
+        font-size: 2rem;
+    }
+    #mapa{
+        display: grid;
+        justify-items: center;
+        padding-top: 5%;
+    }
+    #contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        justify-items: center;
+        row-gap: 10px;
+        border: 5px;   
+    }
+    input, text{
+        display: grid;
+        width: 100%;
+        font-family: initial;
+    }
+    textarea[name="consulta"]{
+        font-family: initial;
+        font-size: medium;
+        font-weight:lighter;
+    }
+    input[type="submit"]{
+        display: grid;
+        width: 25%;
+    }
+    #subir{
+        display: grid;
+        padding: 15px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        font-weight: bolder;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+/*=== Trabajando con CSS-GRID===*/
+@media (min-width: 768px) { 
+    /*=== Aplicando CSS al encabezado===*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+    }
+    #menu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #opcionesIzquierdo{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    /*=== Aplikcando CSS a la seccion principal===*/
+    #quienesSomos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    #porQueElegirnos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    h1{
+        margin: 5px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    h2{
+        margin-left: 10px;
+    }
+    /*=== Aplicando CSS a la Propuesta Educativa===*/
+    #propuestaEducativa{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 30px;
+        justify-content: space-evenly;
+        gap: 70px;
+    }
+    /*=== Aplicando CSS a la Ultimas Noticias===*/
+#ultimasNoticias{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 15px;
+  grid-gap: 10px;
+}
+.noticia {
+  padding: 10px;
+}
+.noticia h2 {
+  font-size: 1.5em;
+}
+.noticia p {
+  margin-top: 0;
+}
+.noticia img {
+  width: 100%;
+} 
+/*=== Aplicando CSS al Footer===*/
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    justify-items: center;
+    align-items: center;
+    color: black;
+    gap: 10px;
+}
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+ion-icon{
+    color: black;
+    font-size: 2rem;
+}
+#subir{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-weight: bolder;
+}
+#mapa h2{
+    display: grid;
+    padding-bottom: 15px;
+}
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    border: 5px;   
+}
+input, text{
+    display: grid;
+    width: 100%;
+    font-family: initial;
+}
+textarea[name="consulta"]{
+    font-family: initial;
+    font-size: medium;
+    font-weight:lighter;
+}
+input[type="submit"]{
+    display: grid;
+    width: 25%;
+}
+
+}
