@@ -3,15 +3,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f8a70;
 }
 img{
-    width: 100%;
+    width: 100%
 }
 ul{
     list-style-type: none;
 }
 p{
     padding-bottom: 5px;
+    text-align: justify;
+    text-justify: auto;
 }
 html{
     scroll-behavior: smooth;
@@ -19,7 +23,7 @@ html{
 
 /*=== Aplicando CSS al encabezado===*/
 #logo{
-    width: 20%;
+    width: 40%;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -27,8 +31,14 @@ html{
 #menu{
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
-
+section[id] {
+    scroll-margin-top: 200px;
+}
+#imagenFondo{
+    padding-top: 80px;
+}
 /*=== Aplicando comportamiento resposive o adaptativo===*/
 /*small devices (cellphones, 320px and up)*/
 @media (min-width: 320px) {
@@ -39,17 +49,25 @@ html{
         position: fixed;
         width: 100%;
         z-index: 1000;
-        background-color: white;
+        background-color: #1f8a70;
     }
     #opcionesIzquierdo{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
     #principal{
         display: grid;
         grid-template-columns: 1fr;
         padding-top: 5px;
         margin: 5px;
+    }
+    #principal p{
+        display: grid;
+        padding: 15px;
+    }
+    h2{
+        display: grid;
+        margin-left: 15px;
     }
     #quienesSomos{
         padding-top: 10px;
@@ -71,12 +89,34 @@ html{
         padding-top: 5px;
         justify-content: center;
     }
+    #propuestaEducativa h2{
+        display: grid;
+        margin-left: -60px;
+    }
     #propuestaEducativa img{
         display: grid;  
         border-radius: 100%;
         justify-items: center;
         padding: 30px;
         padding-bottom: 5px;
+    }
+    #ultimasNoticias{
+        display: grid;
+        padding: 15px;
+    }
+    #ultimasNoticias img{
+        display: grid;
+        padding: 15px;
+    }
+    #ultimasNoticias h3{
+        display: grid;
+        padding-top: 15px;
+        margin-left: 15px;
+    }
+    #ultimasNoticias p{
+        display: grid;
+        margin-top: -25px;
+        padding: 30px;
     }
     #redesSociales{
         display: grid;
@@ -92,7 +132,13 @@ html{
     #mapa{
         display: grid;
         justify-items: center;
-        padding-top: 5%;
+        padding-top: 10px;
+    }
+    #mapa h3{
+        display: grid;
+        justify-items: center;
+        padding-bottom: 10px;
+        font-weight: 700;
     }
     #contacto{
         display: grid;
@@ -100,7 +146,8 @@ html{
         padding-top: 30px;
         justify-items: center;
         row-gap: 10px;
-        border: 5px;   
+        border: 5px;
+        font-weight: bold;   
     }
     input, text{
         display: grid;
@@ -110,7 +157,6 @@ html{
     textarea[name="consulta"]{
         font-family: initial;
         font-size: medium;
-        font-weight:lighter;
     }
     input[type="submit"]{
         display: grid;
@@ -135,7 +181,7 @@ html{
         position: fixed;
         width: 100%;
         z-index: 1000;
-        background-color: white;
+        background-color: #1f8a70;
     }
     #menu{
         display: grid;
@@ -167,6 +213,8 @@ html{
     }
     h2{
         margin-left: 10px;
+        margin-bottom: -20px;
+        padding-top: 25px;
     }
     /*=== Aplicando CSS a la Propuesta Educativa===*/
     #propuestaEducativa{
@@ -175,6 +223,10 @@ html{
         padding: 30px;
         justify-content: space-evenly;
         gap: 70px;
+    }
+    #propuestaEducativa h3{
+        display: grid;
+        justify-items: center;
     }
     /*=== Aplicando CSS a la Ultimas Noticias===*/
 #ultimasNoticias{
@@ -189,21 +241,26 @@ html{
 .noticia h2 {
   font-size: 1.5em;
 }
+.noticia h3 {
+    justify-items: center;
+  }
 .noticia p {
   margin-top: 0;
+  justify-items: center;
 }
 .noticia img {
   width: 100%;
+  justify-items: center;
 } 
 /*=== Aplicando CSS al Footer===*/
 #piePagina{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 20px;
+    margin-top: -10px;
     justify-items: center;
     align-items: center;
     color: black;
-    gap: 10px;
+    gap: 50px;
 }
 #redesSociales{
     display: grid;
@@ -221,9 +278,9 @@ ion-icon{
     justify-items: center;
     font-weight: bolder;
 }
-#mapa h2{
+#mapa h3{
     display: grid;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 #contacto{
     display: grid;
